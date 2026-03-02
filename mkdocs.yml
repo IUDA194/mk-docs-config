@@ -8,7 +8,7 @@ theme:
   name: material
   language: ru
   logo: https://iudalab.cloud/logo.svg
-  favicon: https://iudalab.cloud/logo.svg 
+  favicon: https://iudalab.cloud/logo.svg
 
   palette:
     - scheme: default
@@ -25,15 +25,18 @@ theme:
         name: Светлая тема
 
   features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.instant
-    - navigation.top
+    - navigation.sections     # дерево папками
+    - navigation.expand       # раскрытые секции
+    - navigation.indexes      # index.md как главная страницы папки
     - navigation.tracking
+    - navigation.top
+    - navigation.instant
     - toc.follow
     - content.code.copy
+    - content.tabs.link
     - search.suggest
     - search.highlight
+    - search.share
 
 plugins:
   - search
@@ -52,3 +55,25 @@ markdown_extensions:
   - pymdownx.snippets
   - attr_list
   - md_in_html
+
+# ====== СТРУКТУРА МЕНЮ (ПАПКИ) ======
+nav:
+  - Главная: index.md
+
+  - Accounts service:
+      - Overview: accounts/index.md
+      - Methods:
+          - accounts.get: accounts/accounts.get.md
+          - accounts.lock: accounts/accounts.lock.md
+          - accounts.release: accounts/accounts.release.md
+      - Upload:
+          - accounts.upload.batch: accounts/accounts.upload.batch.md
+          - accounts.upload.single: accounts/accounts.upload.single.md
+
+  - DevOps:
+      - Docker: devops/docker.md
+      - CI/CD: devops/cicd.md
+
+  - Infrastructure:
+      - Kubernetes: infra/kubernetes.md
+      - Monitoring: infra/monitoring.md
