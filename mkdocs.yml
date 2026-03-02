@@ -25,15 +25,15 @@ theme:
         name: Светлая тема
 
   features:
-    - navigation.tabs
-    - navigation.top
-    - navigation.instant
     - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
     - content.code.copy
-    - content.tabs.link
     - search.suggest
     - search.highlight
-    - search.share
 
 plugins:
   - search
