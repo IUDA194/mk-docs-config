@@ -7,8 +7,8 @@ repo_name: IUDA194/mk-docs-config
 theme:
   name: material
   language: ru
-  logo: assets/logo.svg
-  favicon: assets/favicon.png
+  logo: https://iudalab.cloud/logo.svg
+  favicon: https://iudalab.cloud/logo.svg 
 
   palette:
     - scheme: default
