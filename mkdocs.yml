@@ -25,18 +25,16 @@ theme:
         name: Светлая тема
 
   features:
-    - navigation.sections     # дерево папками
-    - navigation.expand       # раскрытые секции
-    - navigation.indexes      # index.md как главная страницы папки
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
     - navigation.tracking
     - navigation.top
     - navigation.instant
     - toc.follow
     - content.code.copy
-    - content.tabs.link
     - search.suggest
     - search.highlight
-    - search.share
 
 plugins:
   - search
@@ -49,31 +47,19 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.snippets
-  - attr_list
-  - md_in_html
 
-# ====== СТРУКТУРА МЕНЮ (ПАПКИ) ======
+# ====== МЕНЮ ======
 nav:
-  - Главная: index.md
+  - Главная: README.md
 
-  - Accounts service:
-      - Overview: accounts/index.md
+  - Accounts Service:
+      - Overview: accounts-service/index.md
       - Methods:
-          - accounts.get: accounts/accounts.get.md
-          - accounts.lock: accounts/accounts.lock.md
-          - accounts.release: accounts/accounts.release.md
+          - accounts.get: accounts-service/accounts.get.md
+          - accounts.lock: accounts-service/accounts.lock.md
+          - accounts.release: accounts-service/accounts.release.md
       - Upload:
-          - accounts.upload.batch: accounts/accounts.upload.batch.md
-          - accounts.upload.single: accounts/accounts.upload.single.md
-
-  - DevOps:
-      - Docker: devops/docker.md
-      - CI/CD: devops/cicd.md
-
-  - Infrastructure:
-      - Kubernetes: infra/kubernetes.md
-      - Monitoring: infra/monitoring.md
+          - accounts.upload.batch: accounts-service/accounts.upload.batch.md
+          - accounts.upload.single: accounts-service/accounts.upload.single.md
