@@ -27,7 +27,6 @@ theme:
   features:
     - navigation.sections      # Группировка как папки
     - navigation.indexes       # README/index как главная страницы папки
-    - navigation.prune         # Раскрыт только активный раздел
     - navigation.tracking
     - navigation.top
     - navigation.instant
