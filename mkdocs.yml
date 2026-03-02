@@ -1,0 +1,8 @@
+site_name: Моя Документация
+theme:
+  name: material
+
+features:
+  - navigation.tabs
+  - search.suggest
+  - search.highlight
